@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaTracing", "AkkaTracing\AkkaTracing.csproj", "{D139C88E-F9EF-417C-AB88-26C7B973EBE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaTracing.Tests", "AkkaTracing.Tests\AkkaTracing.Tests.csproj", "{51522351-CED3-4078-9881-FA60454A42F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaTracing.Hosting", "AkkaTracing.Hosting\AkkaTracing.Hosting.csproj", "{E9D65CEF-C364-482E-961E-6A6FAB55521A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaTracing.Hosting.Tests", "AkkaTracing.Hosting.Tests\AkkaTracing.Hosting.Tests.csproj", "{EB469364-1DEF-431B-B468-08C2FE7216AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AkkaTracing.Examples", "AkkaTracing.Examples", "{9CA98DDC-0FA4-4A19-B688-CDFE27B1C488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaTracing.Examples.Simple", "AkkaTracing.Examples.Simple\AkkaTracing.Examples.Simple.csproj", "{F10E43F0-CA7A-4F52-9316-28F345642E01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D139C88E-F9EF-417C-AB88-26C7B973EBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D139C88E-F9EF-417C-AB88-26C7B973EBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D139C88E-F9EF-417C-AB88-26C7B973EBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D139C88E-F9EF-417C-AB88-26C7B973EBE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51522351-CED3-4078-9881-FA60454A42F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51522351-CED3-4078-9881-FA60454A42F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51522351-CED3-4078-9881-FA60454A42F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51522351-CED3-4078-9881-FA60454A42F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D65CEF-C364-482E-961E-6A6FAB55521A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D65CEF-C364-482E-961E-6A6FAB55521A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D65CEF-C364-482E-961E-6A6FAB55521A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D65CEF-C364-482E-961E-6A6FAB55521A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB469364-1DEF-431B-B468-08C2FE7216AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB469364-1DEF-431B-B468-08C2FE7216AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB469364-1DEF-431B-B468-08C2FE7216AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB469364-1DEF-431B-B468-08C2FE7216AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10E43F0-CA7A-4F52-9316-28F345642E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10E43F0-CA7A-4F52-9316-28F345642E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10E43F0-CA7A-4F52-9316-28F345642E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10E43F0-CA7A-4F52-9316-28F345642E01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F10E43F0-CA7A-4F52-9316-28F345642E01} = {9CA98DDC-0FA4-4A19-B688-CDFE27B1C488}
+	EndGlobalSection
+EndGlobal
