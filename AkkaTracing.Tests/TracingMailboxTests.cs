@@ -4,6 +4,7 @@ using Akka.Actor.Dsl;
 using Akka.Configuration;
 using Akka.TestKit.Configs;
 using Akka.TestKit.Xunit;
+using AkkaTracing.Mailbox;
 
 namespace AkkaTracing.Tests;
 

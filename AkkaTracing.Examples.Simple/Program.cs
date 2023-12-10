@@ -1,28 +1,29 @@
 using Akka.Actor;
-using Akka.Actor.Dsl;
 using Akka.Configuration;
 using Akka.Hosting;
-using AkkaTracing;
 using AkkaTracing.Examples.Simple;
-using OpenTelemetry.Trace;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddOpenTelemetry()
-    .WithTracing(tracing =>
-    {
-        tracing.AddSource(TracingMailboxQueue.ActivitySourceName);
-        tracing.AddZipkinExporter(zipkin =>
-        {
-            zipkin.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
-        });
-    });
+builder.Services.AddOpenTelemetry();
 
 var akkaTracingConfig = ConfigurationFactory.ParseString("""
 akka {
     actor {
         default-mailbox {
-            mailbox-type: "AkkaTracing.TracingMailbox, AkkaTracing"
+            mailbox-type = "AkkaTracing.Mailbox.TracingMailbox, AkkaTracing"
         }
+
+        default-dispatcher {
+            type = "AkkaTracing.Dispatcher.TracingDispatcherConfigurator, AkkaTracing"
+        }
+
+        telemetry {
+            enabled = true
+        }
+    }
+    
+    scheduler {
+        implementation = "AkkaTracing.Scheduler.TracingScheduler, AkkaTracing"
     }
 }
 """);
