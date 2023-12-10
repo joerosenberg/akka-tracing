@@ -64,11 +64,9 @@ public class ActorTracing : IExtension
                 return;
             case ActorRestarted actorRestarted:
                 _tracingRepo.GetOrAdd(actorRestarted.Subject).OnActorRestarted(actorRestarted.Subject);
-                _tracingRepo.Remove(actorRestarted.Subject);
                 return;
             case ActorStopped actorStopped:
                 _tracingRepo.GetOrAdd(actorStopped.Subject).OnActorStopped(actorStopped.Subject);
-                _tracingRepo.Remove(actorStopped.Subject);
                 return;
         }
     }
